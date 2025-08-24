@@ -16,7 +16,24 @@ connectDB()
 connectCloudinary()
 // middlewares 
 
-app.use(cors()) // allow frontend to connect with the backend
+//app.use(cors()) // allow frontend to connect with the backend
+
+
+// List of allowed origins
+const allowedOrigins = [
+    process.env.ALLOWED_ORIGIN1,
+    process.env.ALLOWED_ORIGIN2
+];
+
+const corsOptions = {
+   // origin: process.env.ALLOWED_ORIGIN || '*',
+     origin: allowedOrigins , 
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
+    allowedHeaders: ['Content-Type', 'Authorization' , 'token' ,  "dtoken"]
+};
+
+
+app.use(cors(corsOptions))
 app.use(express.json( ))
 
 app.use('/api/doctor' , doctorRouter)

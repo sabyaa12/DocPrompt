@@ -18,6 +18,7 @@ admin/dist/
 # ---- Environment files (keep secrets safe) ----
 .env
 *.env
+.env.*
 frontend/.env
 backend/.env
 admin/.env
