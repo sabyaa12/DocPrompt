@@ -39,7 +39,7 @@ const corsOptions = {
     }
   },
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
-    allowedHeaders: ['Content-Type', 'Authorization' , 'token' ,  "dtoken"]
+    allowedHeaders: ['Content-Type', 'Authorization' , 'token' ,  "dtoken" , "atoken" ],
 };
 
 
