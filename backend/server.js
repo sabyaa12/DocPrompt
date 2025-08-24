@@ -27,7 +27,17 @@ const allowedOrigins = [
 
 const corsOptions = {
    // origin: process.env.ALLOWED_ORIGIN || '*',
-     origin: allowedOrigins , 
+    //  origin: allowedOrigins , 
+      origin: function (origin, callback) {
+    // allow requests with no origin (like curl or Postman)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error("Not allowed by CORS"));
+    }
+  },
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
     allowedHeaders: ['Content-Type', 'Authorization' , 'token' ,  "dtoken"]
 };
