@@ -1,7 +1,4 @@
 # DocPrompt
-Link for patient side pannel -  https://doc-prompt-theta.vercel.app/
-
-Link for Admin & Doctor panel - https://doc-prompt-nx9f.vercel.app/ 
 
 # 📖 DocPrompt  
 
@@ -66,3 +63,8 @@ All roles are connected through a **Node.js/Express backend** with **MongoDB** a
   Every role (Patient, Doctor, Admin) has profile management to update personal details.
 
 Currently, this is the **base model** – advanced features like search, payments, and notifications will be added in the future.
+
+
+Link for patient side pannel -  https://doc-prompt-theta.vercel.app/
+
+Link for Admin & Doctor panel - https://doc-prompt-nx9f.vercel.app/ 
