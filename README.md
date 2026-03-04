@@ -1,4 +1,7 @@
 # DocPrompt
+Link for patient side pannel -  https://doc-prompt-theta.vercel.app/
+
+Link for Admin & Doctor panel - https://doc-prompt-nx9f.vercel.app/ 
 
 # 📖 DocPrompt  
 
